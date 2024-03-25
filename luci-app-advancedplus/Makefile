@@ -1,25 +1,24 @@
 #
-# Copyright 2019-2023 sirpdboy 
-#
+# Copyright 2023-2024 sirpdboy team <herboy2008@gmail.com>
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
 
 include $(TOPDIR)/rules.mk
-
-NAME:=autotimeset
+NAME:=advancedplus
 PKG_NAME:=luci-app-$(NAME)
-LUCI_TITLE:=LuCI support for Scheduled Time setting
+LUCI_TITLE:=LuCI support for Kucat theme setting by sirpdboy
+LUCI_DEPENDS:=+luci-compat +curl +wget +libustream-openssl
 LUCI_PKGARCH:=all
 
-PKG_VERSION:=2.1.0
-PKG_RELEASE:=20240318
-
+PKG_VERSION:=1.7.9
+PKG_RELEASE:=20240312
 
 define Package/$(PKG_NAME)/conffiles
-/etc/config/autotimeset
+/etc/config/advancedplus
 endef
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
+
 
