@@ -171,6 +171,7 @@ jobs:
         }
         
         git_clone https://github.com/sirpdboy/luci-app-advanced
+        git_clone https://github.com/sirpdboy/luci-app-advancedplus
         git_clone https://github.com/honwen/luci-app-aliddns
         git_clone https://github.com/sbwml/luci-app-alist sbwmlalist
         git_clone https://github.com/roacn/luci-app-autoupdate
