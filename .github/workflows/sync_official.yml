@@ -169,7 +169,6 @@ jobs:
           rm -rf $source_dir
         }
         
-        git_clone https://github.com/sirpdboy/luci-app-advanced
         git_clone https://github.com/sirpdboy/luci-app-advancedplus
         git_clone https://github.com/honwen/luci-app-aliddns
         git_clone https://github.com/sbwml/luci-app-alist sbwmlalist
