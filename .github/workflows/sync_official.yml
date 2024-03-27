@@ -170,6 +170,7 @@ jobs:
         }
         
         git_clone https://github.com/sirpdboy/luci-app-advanced
+        git_clone https://github.com/sbwml/default-settings
         git_clone https://github.com/sonyvivo-c/luci-app-adguardhome
         git_clone https://github.com/honwen/luci-app-aliddns
         git_clone https://github.com/sbwml/luci-app-alist sbwmlalist
