@@ -91,12 +91,8 @@ devices_setup()
 }
 
 # theme
-if [ "$VERSION_TYPE" != "minimal" ] && [ "$(board_name)" != "netgear,r8500" ]; then
+if [ "$VERSION_TYPE" != "minimal" ] && [ -z "$(uci -q get luci.main.pollinterval)" ]; then
     uci set luci.main.mediaurlbase='/luci-static/argon'
-    uci set luci.main.pollinterval='2'
-    uci commit luci
-else
-    uci set luci.main.mediaurlbase='/luci-static/bootstrap'
     uci set luci.main.pollinterval='2'
     uci commit luci
 fi
